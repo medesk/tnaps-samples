@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PropertyMapDocumentation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Property name="Port" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">
+    <Localization language="">
+      <DisplayName>Port</DisplayName>
+      <Description>The socket port number used to expose application content through the Web.</Description>>
+    </Localization>
+  </Property>
+  <Property name="HostName" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">
+    <Localization language="">
+      <DisplayName>Host Name</DisplayName>
+      <Description>The application host name used to access through the Web.</Description>
+    </Localization>
+  </Property>
+</PropertyMapDocumentation>

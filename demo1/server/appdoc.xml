@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationDoc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Summary langugage="ru-ru" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">Демонстрационное приложения с двумя компонентами.</Summary>
+  <Summary language="" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">Demo application with two simple components.</Summary>
+  <DisplayName langugage="ru-ru" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">Демонстрационное</DisplayName>
+  <DisplayName language="" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">Demo application</DisplayName>
+</ApplicationDoc>

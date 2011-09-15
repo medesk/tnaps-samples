@@ -1,0 +1,18 @@
+﻿<ConfigurationDescriptor xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tnaps.tncor.com/schemas/manifest-base-v1.0.xsd">
+  <PropertyMap>
+    <bm:Property bm:type="d3p1:integer" bm:category="" bm:visibility="public" bm:name="Port" xmlns:d3p1="http://www.w3.org/2001/XMLSchema" xmlns:bm="http://tnaps.tncor.com/schemas/manifest-base-v1.0.xsd">8082</bm:Property>
+    <Binding xmlns:xsd="http://www.w3.org/2001/XMLSchema" property="Port">
+      <Target property="Port" alias="hp" />
+    </Binding>
+    <bm:Property bm:type="d3p1:string" bm:category="" bm:visibility="public" bm:name="HostName" xmlns:d3p1="http://www.w3.org/2001/XMLSchema" xmlns:bm="http://tnaps.tncor.com/schemas/manifest-base-v1.0.xsd">localhost</bm:Property>
+    <Binding xmlns:xsd="http://www.w3.org/2001/XMLSchema" property="HostName">
+      <Target property="Host" alias="hp" />
+    </Binding>
+    <bm:Property bm:type="d3p1:boolean" bm:category="" bm:visibility="private" bm:name="ServerInfoEnabled" xmlns:d3p1="http://www.w3.org/2001/XMLSchema" xmlns:bm="http://tnaps.tncor.com/schemas/manifest-base-v1.0.xsd">true</bm:Property>
+    <Binding xmlns:xsd="http://www.w3.org/2001/XMLSchema" property="ServerInfoEnabled">
+      <Target property="ServerInfoEnabled" alias="hp" />
+    </Binding>
+  </PropertyMap>
+  <Resources>propertiesdoc.xml</Resources>
+  <TypeSystem/>
+</ConfigurationDescriptor>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ComponentGeneralInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:docapi="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">
+  <docapi:Summary langugage="ru-ru">Предоставляет доступ к динамике изменения курса валют.</docapi:Summary>
+  <docapi:Summary language="">Represents currency monitor.</docapi:Summary>
+  <docapi:DisplayName language="ru-ru">Курс валют.</docapi:DisplayName>
+  <docapi:DisplayName language="">Currency monitor.</docapi:DisplayName>
+</ComponentGeneralInfo>

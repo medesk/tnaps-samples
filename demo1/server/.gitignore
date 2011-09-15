@@ -1,0 +1,7 @@
+output/
+calc/bin/
+calc/obj/
+currency/bin/
+currency/obj/
+*.suo
+*.user
