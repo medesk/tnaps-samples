@@ -1,7 +1,7 @@
-output/
-calc/bin/
-calc/obj/
-currency/bin/
-currency/obj/
-*.suo
-*.user
+server/calc/bin/
+server/calc/obj/
+server/currency/bin/
+server/currency/obj/
+server/*.suo
+server/*.user
+demo_app.tnpak
