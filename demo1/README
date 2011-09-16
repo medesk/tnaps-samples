@@ -1,4 +1,4 @@
-﻿This is a basic sample for TNAPS that demonstrates transparent access to the components through HTTP. It consits of two components(calc and currency) and single application that uses TNAPS Host Provider built-in component for HTTP access.
+This is a basic sample for TNAPS that demonstrates transparent access to the components through HTTP. It consits of two components(calc and currency) and single application that uses TNAPS Host Provider built-in component for HTTP access.
 
 	1. Requirements
 	2. Compilation
@@ -8,7 +8,7 @@
 ===============================
 Installed TNAPS and TNAPS SDK. For more information about TNAPS requirements and installation, see README in TNAPS installation package.
 
-2. Compilation and Installation
+2. Compilation
 ===============================
 
 ON WINDOWS
