@@ -13,6 +13,6 @@
       <Target property="ServerInfoEnabled" alias="hp" />
     </Binding>
   </PropertyMap>
-  <Resources>propertiesdoc.xml</Resources>
+  <Resources>/propertiesdoc.xml</Resources>
   <TypeSystem/>
 </ConfigurationDescriptor>
