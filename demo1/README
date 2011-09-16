@@ -13,8 +13,8 @@ Installed TNAPS and TNAPS SDK. For more information about TNAPS requirements and
 
 ON WINDOWS
 	1. Open Windows Command Line (cmd.exe);
-	2. Change dir to the directory with demo1 sample(for example, >cd D:\\tnaps-samples\\demo1);
-	3. Assign installed TNAPS path to the 'tnaps' environment variable (>set tnaps="C:\\Program Files\\TNAPS");
+	2. Change dir to the directory with demo1 sample(for example, >cd D:\tnaps-samples\demo1);
+	3. Assign installed TNAPS path to the 'tnaps' environment variable (>set tnaps="C:\Program Files\TNAPS");
 	4. Execute make_sample.cmd on x86 machine, or make_sample_x64.cmd on x64 machine (>make_sample);
 
 ON LINUX
