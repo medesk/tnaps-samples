@@ -1,9 +1,24 @@
-Welcome to TNAPS samples directory!
+Welcome to TNAPS Samples!
 
-We hope that these samples help you to understand TNAPS and create more amazing components and applications.
+We hope that theese samples would help you to understand TNAPS 
+and create amazing components and applications!
 
-Each subdirectory represents a completed sample that you can download, build and execute. Depending on the specific example, you may need different compilers and utilities. Each sample contains its own README file.
+Each subdirectory represents a completed sample that you 
+can download, build and execute. 
+
+Depending on the specific example, you may need different 
+compilers and utilities. Each sample contains its own README file.
+
+All samples are cross-platform. 
+
+Licensing
+==============================
+
+All of the sample are completely free to use and modify. 
+Fill free to add cool features and send pull requests with your ideas! 
 
 DEMO1
 ===============================
-This sample is written using C#(server-side part) and JavaScript(client-side part) and explain TNAPS basic principles and concepts.
+
+This sample is written using C# (server) and HTML+JavaScript (client).
+It demonstrates TNAPS basic principles and concepts.
