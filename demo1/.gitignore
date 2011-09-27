@@ -4,4 +4,4 @@ server/currency/bin/
 server/currency/obj/
 server/*.suo
 server/*.user
-demo_app.tnpak
+*.tnpak
