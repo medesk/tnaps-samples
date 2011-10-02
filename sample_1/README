@@ -1,8 +1,9 @@
-This is a basic sample for TNAPS that demonstrates transparent access to the components through HTTP. It consits of two components(calc and currency) and single application that uses TNAPS Host Provider built-in component for HTTP access.
+This is a basic sample for TNAPS that demonstrates transparent access to the components through HTTP. It consits of two components (Binary Calculator (Converter) and Currency Monitor) and a single application that uses TNAPS Host Provider built-in component for HTTP access.
 
 	1. Requirements
 	2. Compilation
 	3. Deployment
+	4. Sample Architecture
 
 1. Requirements
 ===============================
@@ -11,7 +12,7 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
   For more information about TNAPS requirements and installation, 
   see README in TNAPS installation package.
 
-* Have a note on requirement to install the following TNAPS dlls to GAC:
+* Have a note on requirement to install the following TNAPS dlls into GAC:
 
   TN.ApplicationServer.dll
   TN.ApplicationServer.ComponentModel.dll 
@@ -22,19 +23,20 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
 ===============================
 
 WINDOWS
+
 	1. Open Windows Command Line (cmd.exe);
 	2. Change dir to the directory with demo1 sample
-		 > cd D:\tnaps-samples\demo1
+		cd D:\tnaps-samples\sample_1
 	3. Assign installed TNAPS_SDK path to the 'TNAPS_SDK' environment variable 
-		 > set tnaps="C:\Program Files\TNAPS"
+		set TNAPS_SDK="C:\Program Files\TNAPS"
 	4. Execute make_sample.cmd on x86 machine, or make_sample_x64.cmd on x64 machine
-		> make_sample.cmd
+		make_sample.cmd
 
-LINUX/MAC
+LINUX/MAC OSX
 	
 	1. Open console;
-	2. Change dir to the directory with demo1 sample
-		cd ~/tnaps-samples/demo1
+	2. Change dir to the directory with sample_1
+		cd ~/tnaps-samples/sample_1
 	3. Assign installed TNAPS_SDK path to the 'TNAPS_SDK' environment variable
 		export TNAPS_SDK=/opt/tnaps
 	4. Assign Mono path to the 'MONO' environment variable
@@ -42,16 +44,43 @@ LINUX/MAC
 	4. Execute make_sample.sh
 		./make_sample.sh
 
-This workflow produces 'demo_app.tnpak' file that represents TNAPS Application Package.
+This workflow produces 'sample_1.tnpak' file that represents TNAPS Application Package.
 
 NOTE: You can define a necessary environment variables once at machine level.
 
 3. Deployment
 ===============================
-Open Library in TNAPS console and install Application Package produced in
-the previous step. Select Applications menu item in the Library menu. 
-Description of the sample application describes how it works and what 
-you should do to understand the sample.
 
-Switch to the Applications menu in TNAPS console. Create a new instance for
-the installed sample application and execute it.
+	1. Navigate to TNAPS Management Center using browser (usually http://localhost:9095/tnaps/console/index.html).
+	2. Open TNAPS Library panel.
+	2. Click [Install] button
+	3. Select sample_1.tnpak file and press Install. Your sample application will be installed into TNAPS Library.
+	4. Now create Instance from that App. To do so open Apps panel and click [Add instance] button.
+	5. Select installed App and version, enter Instance name and click Create. 
+	6. In the created instance panel click Start button to launch app.
+	7. Navigate to http://localhost:8082/items/index.html using your browser to load sample client.
+ 
+4. Sample Architecture
+===============================
+
+This sample demonstrates some basics of TNAPS usage. It is a fully featured
+web-application with client part written in HTML+JavaScript and embedded into
+server package. 
+
+Sample contains two custom components and one standart components that
+comes with TNAPS - HostProvider. HostProvider is a root component in this App.
+It recieves HTTP requests at specified port and forwards them to
+the actual component.
+
+For example request like /components/calc/int_to_bin.json?value=0 will be
+forwarded to binary converter (calculator) component. As 'calc' is the
+alias under which HostProvider is linked to this component. 
+
+Here is the basic architecture outline:
+
+                           /-->currency <----> Yahoo! Finanace API
+client <-> hostprovider<--x	        
+                |          \-->calculator
+                |
+		web client files
+
