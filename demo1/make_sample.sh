@@ -30,7 +30,7 @@ $MONO/bin/mono $TNAPS_SDK/tnpack.exe currency.tnpak -component -impl ./server/cu
 
 echo Making application package...
 
-$MONO/bin/mono $TNAPS_SDK/tnpack.exe demo1.tnpak -app -author "TN LLC" -name sample_1 -hpage http://github.com/tncor/tnaps-samples copy -ver 1.0 -desc ./server/appdoc.xml ./server/app.png -dep Name=hostprovider,Version=1.0,SignatureToken=0024000004800000 r hp NONE -dep Name=BinaryCalculator,Version=1.0,SignatureToken=7F33AE53726B526A d calc NONE -dep Name=CurrencyMonitor,Version=1.0,SignatureToken=7F33AE53726B526A d currency NONE -rels hp calc -rels hp currency -sign:rsa ./server/sign_key.rsa -include calculator.tnpak calculator.tnpak public -include currency.tnpak currency.tnpak public -props ./server/app_props.xml -include:folder client /vdir permanent
+$MONO/bin/mono $TNAPS_SDK/tnpack.exe sample_1.tnpak -app -author "TN LLC" -name sample_1 -hpage http://github.com/tncor/tnaps-samples copy -ver 1.0 -desc ./server/appdoc.xml ./server/app.png -dep Name=hostprovider,Version=1.0,SignatureToken=0024000004800000 r hp NONE -dep Name=BinaryCalculator,Version=1.0,SignatureToken=7F33AE53726B526A d calc NONE -dep Name=CurrencyMonitor,Version=1.0,SignatureToken=7F33AE53726B526A d currency NONE -rels hp calc -rels hp currency -sign:rsa ./server/sign_key.rsa -include calculator.tnpak calculator.tnpak public -include currency.tnpak currency.tnpak public -props ./server/app_props.xml -include:folder client /vdir permanent
 
 echo Cleanup...
 
