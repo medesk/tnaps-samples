@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ApplicationDoc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Summary language="" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">
-    Demo application with two simple components. The first CALC component provides conversion between decimal number and its binary representation. The second CURRENCY
-    component demonstrates accessing to Yahoo! REST API. These components are exposed to the Web through built-in Host Provider component.
-    When you create an instance, you will be prompted to configure the instance. It is recommended to leave them by default. 
-    After instance startup, you can use a browser to access to the example: http://localhost:8082/items/index.html. Enjoy!
+    TNAPS sample app with two components and embedded web-client to access them.
+    These components are exposed to the Web through built-in Host Provider component.
+    Usage: 
+    1.Create instance of this app. 
+    2.Configure hosting parameters for web client. 
+    3.Start Instance. 
+    4.Access web-client from browser. Default is to http://localhost:8082/items/index.html
   </Summary>
-  <DisplayName language="" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">Demo application</DisplayName>
-  <DisplayName language="ru-ru">Простое приложение</DisplayName>
+  <DisplayName language="" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">TNAPS Sample App 1</DisplayName>
+  <DisplayName language="ru-ru">Демо приложение 1</DisplayName>
+  <DisplayName language="ja-JP">デモアップ１</DisplayName>
 </ApplicationDoc>
