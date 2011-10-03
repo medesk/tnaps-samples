@@ -37,4 +37,4 @@ echo Cleanup...
 rm ./calculator.tnpak
 rm ./currency.tnpak
 
-echo Done, install demo1.tnpack into TNAPS
+echo Done, install sample_1.tnpack into TNAPS
