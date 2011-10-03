@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ComponentGeneralInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:docapi="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">
+  <docapi:Summary language="ru-ru">Предоставляет доступ к динамике изменения курса валют.</docapi:Summary>
+  <docapi:Summary language="">
+  		Represents currency monitor that requests 
+  		EUR/USD value using Yahoo! Finance API. This component needs Internet access. 
+  		Due to limitation of free Yahoo! API the value change delay is about 20 seconds.
+  </docapi:Summary>
+  <docapi:DisplayName language="ru-ru">Курс валют</docapi:DisplayName>
+  <docapi:DisplayName language="">Currency monitor</docapi:DisplayName>
+</ComponentGeneralInfo>

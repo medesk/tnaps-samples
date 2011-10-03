@@ -175,7 +175,7 @@ var Tab = new Class({
     	var options = {
 				chart_type: "Column",
 				width: 480,
-		        height: 190,
+		        height: 100,
 				colors: ['#4f81bd', '#c0504d', '#9bbb59', '#8064a2'],
 		        padding: 12,
 		        font: "Arial",

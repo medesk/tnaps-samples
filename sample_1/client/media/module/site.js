@@ -11,7 +11,7 @@ window.addEvent('domready', function(){
 	var el = selectTab.toElement();	
 	$('header').adopt(el);
 	
-	//показать первую закладку
+	//show first tab
 	var open = openTab.bind({selectTab:selectTab});
 	open(g_locale.tabs.start.name, g_locale.tabs.start.next);
 });

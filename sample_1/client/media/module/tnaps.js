@@ -1,4 +1,6 @@
+// object with interfaces for calling server side of application
 function TNAPS(){		
+	// Binary Converter method
 	this.binToInt = function(value, successCallback, failCallback){
 		failCallback = typeof(failCallback) != 'undefined' ? failCallback : function(xhr){};
 		return new Request({
@@ -10,6 +12,7 @@ function TNAPS(){
 			onSuccess: successCallback
 		});	
 	}
+	// Binary Converter Method
 	this.intToBin = function(value, successCallback, failCallback){
 		failCallback = typeof(failCallback) != 'undefined' ? failCallback : function(xhr){};
 		return new Request({
@@ -21,6 +24,7 @@ function TNAPS(){
 			onSuccess: successCallback
 		});	
 	}
+	// Currency Monitor Method
 	this.eurUSD = function(successCallback, failCallback){
 		failCallback = typeof(failCallback) != 'undefined' ? failCallback : function(xhr){};
 		return new Request({
@@ -32,10 +36,11 @@ function TNAPS(){
 			onSuccess: successCallback
 		});	
 	}
+	// TNAPS HostProvider component method
 	this.osVersion = function(successCallback, failCallback){
 		failCallback = typeof(failCallback) != 'undefined' ? failCallback : function(xhr){};
 		return new Request({
-			url: g_locale.req.osVersion,
+			url: '/internal/osver.json',
 			method: 'GET',
 			noCache: true,
 			onRequest: function(){},
@@ -43,10 +48,11 @@ function TNAPS(){
 			onSuccess: successCallback
 		});	
 	}
+	// TNAPS HostProvider component method
 	this.tnapsVersion = function(successCallback, failCallback){
 		failCallback = typeof(failCallback) != 'undefined' ? failCallback : function(xhr){};
 		return new Request({
-			url: g_locale.req.tnapsVersion,
+			url: '/internal/ver.json',
 			method: 'GET',
 			noCache: true,
 			onRequest: function(){},

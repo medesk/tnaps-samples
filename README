@@ -1,6 +1,6 @@
 Welcome to TNAPS Samples!
 
-We hope that theese samples would help you to understand TNAPS 
+We hope that these samples would help you to understand TNAPS 
 and create amazing components and applications!
 
 Each subdirectory represents a completed sample that you 
@@ -17,7 +17,7 @@ Licensing
 All of the sample are completely free to use and modify. 
 Fill free to add cool features and send pull requests with your ideas! 
 
-DEMO1
+SAMPLE 1
 ===============================
 
 This sample is written using C# (server) and HTML+JavaScript (client).

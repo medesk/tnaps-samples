@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ComponentGeneralInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:docapi="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">
-  <docapi:Summary language="ru-ru">Предоставляет функционал по конвертирования цисел из десятичной системы исчисления в десятеричную и наоборот.</docapi:Summary>
-  <docapi:Summary language="">Exposes conversion between decimal and binary numbers.</docapi:Summary>
-  <docapi:DisplayName language="">Calculator</docapi:DisplayName>
-  <docapi:DisplayName language="ru-ru">Калькулятор</docapi:DisplayName>
-</ComponentGeneralInfo>
