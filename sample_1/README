@@ -31,7 +31,7 @@ WINDOWS
 		cd D:\tnaps-samples\sample_1
 	3. Assign installed TNAPS_SDK path to the 'TNAPS_SDK' environment variable 
 		set TNAPS_SDK="C:\Program Files\TNAPS"
-	4. Execute make_sample.cmd on x86 machine, or make_sample_x64.cmd on x64 machine
+	4. Execute make_sample.cmd
 		make_sample.cmd
 
 LINUX/MAC OSX
@@ -53,7 +53,7 @@ NOTE: You can define a necessary environment variables once at machine level.
 3. Deployment
 ===============================
 
-	1. Navigate to TNAPS Management Center using browser (usually http://localhost:9095/tnaps/console/index.html).
+	1. Navigate to TNAPS Management Center using browser (usually http://localhost:9095/tnaps/console).
 	2. Open TNAPS Library panel.
 	2. Click [Install] button
 	3. Select sample_1.tnpak file and press Install. Your sample application will be installed into TNAPS Library.
