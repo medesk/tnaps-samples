@@ -16,8 +16,10 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
 
   TN.ApplicationServer.dll
   TN.ApplicationServer.ComponentModel.dll 
+  TN.ApplicationServer.Core.dll
 
-  They are referenced from component solutions.
+  They are referenced from component solutions. However, if you have installed 
+  TNAPS SDK correctly these DLLs are already in you GAC!
 
 2. Compilation
 ===============================
