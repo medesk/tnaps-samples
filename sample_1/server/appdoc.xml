@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ApplicationDoc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Summary language="" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">
+    Default client side address is http://localhost:8082/items/index.html 
     TNAPS sample app with two components and embedded web-client to access them.
     These components are exposed to the Web through built-in Host Provider component.
     Usage: 
     1.Create instance of this app. 
     2.Configure hosting parameters for web client. 
     3.Start Instance. 
-    4.Access web-client from browser. Default is to http://localhost:8082/items/index.html
+    4.Access web-client from browser. 
   </Summary>
   <DisplayName language="" xmlns="http://tnaps.tncor.com/schemas/docapi-v1.0.xsd">TNAPS Sample App 1</DisplayName>
   <DisplayName language="ru-ru">Демо приложение 1</DisplayName>

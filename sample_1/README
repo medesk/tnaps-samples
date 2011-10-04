@@ -10,14 +10,16 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
 
 * Installed TNAPS and TNAPS SDK. 
   For more information about TNAPS requirements and installation, 
-  see README in TNAPS installation package.
+  see README in TNAPS and TNAPS SDK installation packages.
 
 * Have a note on requirement to install the following TNAPS dlls into GAC:
 
   TN.ApplicationServer.dll
   TN.ApplicationServer.ComponentModel.dll 
+  TN.ApplicationServer.Core.dll 
 
-  They are referenced from component solutions.
+  They are referenced from component solutions. If you have installed TNAPS SDK
+  tools correctly you already have these dlls in your GAC.
 
 2. Compilation
 ===============================
