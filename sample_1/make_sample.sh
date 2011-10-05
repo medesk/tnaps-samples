@@ -17,6 +17,17 @@
 # export MONO=/usr             #typical for Mac as Mono installs into /usr/bin
 #
 # export TNAPS_SDK=/opt/tnaps
+#
+#
+# =========! IMPORTANT NOTICE !========
+# 
+# 1. This script should be executed inside its directory
+#
+#		cd sample_1
+#		./make_sample.sh
+#
+# 2. MONO and TNAPS_SDK variables should not include final slash
+#
 ##############################################################################
 
 echo Building component binaries...

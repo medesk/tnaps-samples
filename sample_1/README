@@ -10,16 +10,16 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
 
 * Installed TNAPS and TNAPS SDK. 
   For more information about TNAPS requirements and installation, 
-  see README in TNAPS installation package.
+  see README in TNAPS and TNAPS SDK installation packages.
 
 * Have a note on requirement to install the following TNAPS dlls into GAC:
 
   TN.ApplicationServer.dll
   TN.ApplicationServer.ComponentModel.dll 
-  TN.ApplicationServer.Core.dll
+  TN.ApplicationServer.Core.dll 
 
-  They are referenced from component solutions. However, if you have installed 
-  TNAPS SDK correctly these DLLs are already in you GAC!
+  They are referenced from component solutions. If you have installed TNAPS SDK
+  tools correctly you already have these dlls in your GAC.
 
 2. Compilation
 ===============================
@@ -45,6 +45,9 @@ LINUX/MAC OSX
 		export MONO=/opt/mono
 	4. Execute make_sample.sh
 		./make_sample.sh
+
+	IMPORTANT!: make_sample.sh should be executed directly from sample_1 dir
+	Do not execute it outside sample_1 folder as it uses relative paths to build packages! 
 
 This workflow produces 'sample_1.tnpak' file that represents TNAPS Application Package.
 
