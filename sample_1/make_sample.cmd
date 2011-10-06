@@ -1,3 +1,5 @@
+echo off
+
 rem This build script compiles 2 components 
 rem using msbuild
 rem and make components packages (tnpak)  from them.
