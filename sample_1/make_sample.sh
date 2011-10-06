@@ -37,7 +37,7 @@ echo Making component packages...
 
 $MONO/bin/mono $TNAPS_SDK/tnpack.exe calculator.tnpak -component -impl ./server/calc/bin/Release/TN.ApplicationServer.Samples.Calculator.dll -author "TN LLC" -name BinaryCalculator -hpage http://github.com/tncor/tnaps-samples copy -ver 1.0.0.0 -desc ./server/calc/compdoc.xml ./server/calc/comp.png -type clr -sign:rsa ./server/sign_key.rsa
 
-$MONO/bin/mono $TNAPS_SDK/tnpack.exe currency.tnpak -component -impl ./server/currency/bin/Release/TN.ApplicationServer.Samples.Currency.dll -author "TN LLC" -name CurrencyMonitor -hpage http://github.com/tncor/tnaps-samples -ver 1.0.0.0 -desc ./server/currency/compdoc.xml ./server/currency/comp.png -type clr -sign:rsa ./server/sign_key.rsa
+$MONO/bin/mono $TNAPS_SDK/tnpack.exe currency.tnpak -component -impl ./server/currency/bin/Release/TN.ApplicationServer.Samples.Currency.dll -author "TN LLC" -name CurrencyMonitor -hpage http://github.com/tncor/tnaps-samples -ver 1.0.0.0 -desc ./server/currency/compdoc.xml ./server/currency/comp.png -type clr -sign:rsa ./server/sign_key.rsa -envpar Web=True
 
 echo Making application package...
 
