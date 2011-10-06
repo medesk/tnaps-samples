@@ -22,7 +22,7 @@ echo Build component packages
 
 %tnaps_sdk%\tnpack calculator.tnpak -component -impl server\calc\bin\Release\TN.ApplicationServer.Samples.Calculator.dll -author "TN LLC" -name Calculator -hpage http://github.com/tncor/tnaps-samples copy -ver 1.0.0.0 -desc server\calc\compdoc.xml server\calc\comp.png -type clr -sign:rsa server\sign_key.rsa
 
-%tnaps_sdk%\tnpack currency.tnpak -component -impl server\currency\bin\Release\TN.ApplicationServer.Samples.Currency.dll -author "TN LLC" -name Currency -hpage http://github.com/tncor/tnaps-samples copy -ver 1.0.0.0 -desc server\currency\compdoc.xml server\currency\comp.png -type clr -sign:rsa server\sign_key.rsa
+%tnaps_sdk%\tnpack currency.tnpak -component -impl server\currency\bin\Release\TN.ApplicationServer.Samples.Currency.dll -author "TN LLC" -name Currency -hpage http://github.com/tncor/tnaps-samples copy -ver 1.0.0.0 -desc server\currency\compdoc.xml server\currency\comp.png -type clr -sign:rsa server\sign_key.rsa -envpar "Web=True"
 
 echo Build application package
 
