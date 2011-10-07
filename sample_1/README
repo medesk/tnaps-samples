@@ -20,7 +20,7 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
 
 WINDOWS
 
-	1. Open Windows Command Line (cmd.exe) using as Administrator;
+	1. Open Windows Command Line (cmd.exe) as Administrator;
 	2. Change dir to the directory with demo1 sample
 		cd D:\tnaps-samples\sample_1
 	3. Assign installed TNAPS SDK path to the 'TNAPS_SDK' environment variable 
