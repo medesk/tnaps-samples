@@ -30,8 +30,20 @@
 #
 ##############################################################################
 
+echo Installing TNAPS assemblies into GAC
+
+$MONO\bin\gacutil -i $TNAPS_SDK/TN.ApplicationServer.dll
+$MONO\bin\gacutil -i $TNAPS_SDK/TN.ApplicationServer.Core.dll
+$MONO\bin\gacutil -i $TNAPS_SDK/TN.ApplicationServer.ComponentModel.dll
+
 echo Building component binaries...
 $MONO/bin/xbuild ./server/components.sln /t:rebuild /p:Configuration=Release /p:Platform="Any CPU"
+
+echo Uninstalling TNAPS assemblies from GAC
+
+$MONO\bin\gacutil -u TN.ApplicationServer
+$MONO\bin\gacutil -u TN.ApplicationServer.Core
+$MONO\bin\gacutil -u TN.ApplicationServer.ComponentModel
 
 echo Making component packages...
 

@@ -18,7 +18,7 @@ echo Build Components
 IF %PROCESSOR_ARCHITECTURE% EQU x86 (SET FRAMEWORK=%windir%\Microsoft.NET\Framework\v4.0.30319) ELSE (SET FRAMEWORK=%windir%\Microsoft.NET\Framework64\v4.0.30319)
 SET MSBUILD=%FRAMEWORK%\msbuild.exe
 
-echo Install TNAPS assemblies to GAC
+echo Installing TNAPS assemblies to GAC
 
 %GACUTIL% -i %TNAPS_SDK%\TN.ApplicationServer.dll
 %GACUTIL% -i %TNAPS_SDK%\TN.ApplicationServer.Core.dll
@@ -27,6 +27,12 @@ echo Install TNAPS assemblies to GAC
 echo Compile C# Project
 
 %MSBUILD% server\components.sln /p:Configuration=Release /p:Platform="Any CPU" /t:rebuild
+
+echo Uninstalling TNAPS assemblies from GAC
+
+%GACUTIL% -u TN.ApplicationServer
+%GACUTIL% -u TN.ApplicationServer.Core
+%GACUTIL% -u TN.ApplicationServer.ComponentModel
 
 echo Build component packages
 
@@ -42,9 +48,5 @@ echo Cleanup
 
 del calculator.tnpak
 del currency.tnpak
-
-%GACUTIL% -u TN.ApplicationServer
-%GACUTIL% -u TN.ApplicationServer.Core
-%GACUTIL% -u TN.ApplicationServer.ComponentModel
 
 echo Done, install sample_1.tnpak into TNAPS
