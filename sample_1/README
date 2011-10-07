@@ -12,25 +12,21 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
   For more information about TNAPS requirements and installation, 
   see README in TNAPS and TNAPS SDK installation packages.
 
-* Have a note on requirement to install the following TNAPS dlls into GAC:
+* Installed Microsoft .NET Framework SDK (Windows only).
 
-  TN.ApplicationServer.dll
-  TN.ApplicationServer.ComponentModel.dll 
-  TN.ApplicationServer.Core.dll 
-
-  They are referenced from component solutions. If you have installed TNAPS SDK
-  tools correctly you already have these dlls in your GAC.
 
 2. Compilation
 ===============================
 
 WINDOWS
 
-	1. Open Windows Command Line (cmd.exe);
+	1. Open Windows Command Line (cmd.exe) using as Administrator;
 	2. Change dir to the directory with demo1 sample
 		cd D:\tnaps-samples\sample_1
-	3. Assign installed TNAPS_SDK path to the 'TNAPS_SDK' environment variable 
+	3. Assign installed TNAPS SDK path to the 'TNAPS_SDK' environment variable 
 		set TNAPS_SDK="C:\Program Files\TNAPS"
+	4. Specify location of GacUtil utility(part of .NET SDK):
+		set GACUTIL=C:\Program Files\Microsoft SDKs\Windows\v7.0A\Bin\NETFX 4.0 Tools\gacutil.exe
 	4. Execute make_sample.cmd
 		make_sample.cmd
 
@@ -40,7 +36,7 @@ LINUX/MAC OSX
 	2. Change dir to the directory with sample_1
 		cd ~/tnaps-samples/sample_1
 	3. Assign installed TNAPS_SDK path to the 'TNAPS_SDK' environment variable
-		export TNAPS_SDK=/opt/tnaps
+		export TNAPS_SDK=/opt/tnaps/sdk
 	4. Assign Mono path to the 'MONO' environment variable
 		export MONO=/opt/mono
 	4. Execute make_sample.sh
