@@ -26,6 +26,8 @@
 #
 ##############################################################################
 
+export TNAPS_SDK=$TNAPS_HOME/sdk
+
 echo Building component binaries...
 $MONO/bin/xbuild ./server/components.sln /t:rebuild /p:Configuration=Release /p:Platform="Any CPU"
 

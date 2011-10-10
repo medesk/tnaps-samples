@@ -11,7 +11,7 @@ echo Build Components
 
 IF %PROCESSOR_ARCHITECTURE% EQU x86 (SET FRAMEWORK=%windir%\Microsoft.NET\Framework\v4.0.30319) ELSE (SET FRAMEWORK=%windir%\Microsoft.NET\Framework64\v4.0.30319)
 SET MSBUILD=%FRAMEWORK%\msbuild.exe
-SET TNAPS_SDK=%TNAPS_PATH%\sdk
+SET TNAPS_SDK=%TNAPS_HOME%\sdk
 
 echo Compile C# Project
 
