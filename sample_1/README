@@ -23,11 +23,7 @@ WINDOWS
 	1. Open Windows Command Line (cmd.exe) as Administrator;
 	2. Change dir to the directory with demo1 sample
 		cd D:\tnaps-samples\sample_1
-	3. Assign installed TNAPS SDK path to the 'TNAPS_SDK' environment variable 
-		set TNAPS_SDK="C:\Program Files\TNAPS"
-	4. Specify location of GacUtil utility(part of .NET SDK):
-		set GACUTIL=C:\Program Files\Microsoft SDKs\Windows\v7.0A\Bin\NETFX 4.0 Tools\gacutil.exe
-	4. Execute make_sample.cmd
+	3. Execute make_sample.cmd
 		make_sample.cmd
 
 LINUX/MAC OSX
@@ -35,11 +31,7 @@ LINUX/MAC OSX
 	1. Open console;
 	2. Change dir to the directory with sample_1
 		cd ~/tnaps-samples/sample_1
-	3. Assign installed TNAPS_SDK path to the 'TNAPS_SDK' environment variable
-		export TNAPS_SDK=/opt/tnaps/sdk
-	4. Assign Mono path to the 'MONO' environment variable
-		export MONO=/opt/mono
-	4. Execute make_sample.sh
+	3. Execute make_sample.sh
 		./make_sample.sh
 
 	IMPORTANT!: make_sample.sh should be executed directly from sample_1 dir

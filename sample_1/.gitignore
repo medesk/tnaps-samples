@@ -1,7 +1,1 @@
-server/calc/bin/
-server/calc/obj/
-server/currency/bin/
-server/currency/obj/
-server/*.suo
-server/*.user
 *.tnpak
