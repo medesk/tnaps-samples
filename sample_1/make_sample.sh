@@ -9,41 +9,25 @@
 # Script needs the following environment variables
 #
 # MONO - path to mono installation
-# TNAPS_SDK - path to the installed TNAPS SDK Tools
 #
 # Examples
 # export MONO=/opt/mono-2.10.1 #typical for linux
 #
 # export MONO=/usr             #typical for Mac as Mono installs into /usr/bin
 #
-# export TNAPS_SDK=/opt/tnaps
 #
 #
 # =========! IMPORTANT NOTICE !========
 # 
-# 1. This script should be executed inside its directory
+#    This script should be executed inside its directory
 #
 #		cd sample_1
 #		./make_sample.sh
 #
-# 2. MONO and TNAPS_SDK variables should not include final slash
-#
 ##############################################################################
-
-echo Installing TNAPS assemblies into GAC
-
-sudo $MONO\bin\gacutil -i $TNAPS_SDK/TN.ApplicationServer.dll
-sudo $MONO\bin\gacutil -i $TNAPS_SDK/TN.ApplicationServer.Core.dll
-sudo $MONO\bin\gacutil -i $TNAPS_SDK/TN.ApplicationServer.ComponentModel.dll
 
 echo Building component binaries...
 $MONO/bin/xbuild ./server/components.sln /t:rebuild /p:Configuration=Release /p:Platform="Any CPU"
-
-echo Uninstalling TNAPS assemblies from GAC
-
-sudo $MONO\bin\gacutil -u TN.ApplicationServer
-sudo $MONO\bin\gacutil -u TN.ApplicationServer.Core
-sudo $MONO\bin\gacutil -u TN.ApplicationServer.ComponentModel
 
 echo Making component packages...
 
