@@ -11,8 +11,11 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
 * Installed TNAPS and TNAPS SDK. 
   For more information about TNAPS requirements and installation, 
   see README in TNAPS and TNAPS SDK installation packages.
+  
+* TNAPS_HOME environment variable pointing to TNAPS directory
 
 * Installed Microsoft .NET Framework SDK (Windows only).
+
 
 
 2. Compilation
@@ -34,8 +37,10 @@ LINUX/MAC OSX
 	3. Execute make_sample.sh
 		./make_sample.sh
 
-	IMPORTANT!: make_sample.sh should be executed directly from sample_1 dir
-	Do not execute it outside sample_1 folder as it uses relative paths to build packages! 
+	IMPORTANT!
+	make_sample.sh should be executed directly from sample_1 dir
+	Do not execute it outside sample_1 folder as it uses relative paths 
+	to build packages! 
 
 This workflow produces 'sample_1.tnpak' file that represents TNAPS Application Package.
 
@@ -77,3 +82,15 @@ client <-> hostprovider<--x
                 |
 		web client files
 
+Complitation of the sample package is a bit confusing right now as you need 
+to set a lot of configuration parameters for making package. This would become
+easier when TNAPS Studio will arrive and all components and apps can be packaged
+right from the TNAPS Management Center.
+
+However all of the compilation logic is quite simple:
+
+1. We build *.dll files with component logic.
+2. We create TNAPS Packages for this components. 
+3. We create TNAPS Application Package and specify component dependencies.
+
+   

@@ -9,24 +9,28 @@
 # Script needs the following environment variables
 #
 # MONO - path to mono installation
+# TNAPS_HOME - path to TNAPS directory
 #
 # Examples
 # export MONO=/opt/mono-2.10.1 #typical for linux
 #
 # export MONO=/usr             #typical for Mac as Mono installs into /usr/bin
 #
-#
+# export TNAPS_HOME=/opt/tnaps
 #
 # =========! IMPORTANT NOTICE !========
 # 
-#    This script should be executed inside its directory
+#    1. This script should be executed inside its directory
 #
 #		cd sample_1
 #		./make_sample.sh
 #
+#    2. All environment variables should not contain ending slash.
+#		/opt/tnaps	# correct
+#		/opt/tnaps/ 	# incorrect
 ##############################################################################
 
-export TNAPS_SDK=$TNAPS_HOME/sdk
+export TNAPS_SDK=$TNAPS_PATH/sdk
 
 echo Building component binaries...
 $MONO/bin/xbuild ./server/components.sln /t:rebuild /p:Configuration=Release /p:Platform="Any CPU"
