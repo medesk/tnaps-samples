@@ -50,6 +50,13 @@ This workflow produces 'sample_1.tnpak' file that represents TNAPS Application P
 
 NOTE: You can define a necessary environment variables once at machine level.
 
+
+In case of troubles with compilation you can download compiled binary here:
+
+http://cloudfront.tncor.com/tnaps/samples/sample_1.tnpak
+
+NOTE: There is no guarantee that this binary will be always up to date. 
+
 3. Deployment
 ===============================
 
