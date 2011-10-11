@@ -12,7 +12,7 @@ namespace TN.ApplicationServer.Samples.Calculator
     /// Represents simple INT/BIn converter.
     /// This class cannot be inherited.
     /// </summary>
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]    //Again WCF-style programming!
     public sealed class Calculator: WebEnabledComponent, ICalculator
     {
         /// <summary>
