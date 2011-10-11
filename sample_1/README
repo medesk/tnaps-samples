@@ -13,6 +13,10 @@ This is a basic sample for TNAPS that demonstrates transparent access to the com
   see README in TNAPS and TNAPS SDK installation packages.
   
 * TNAPS_HOME environment variable pointing to TNAPS directory
+  i.e. /opt/tnaps
+
+* (for Linux/MAC) MONO environment variable pointing to Mono directory
+  i.e. /opt/mono
 
 * Installed Microsoft .NET Framework SDK (Windows only).
 
