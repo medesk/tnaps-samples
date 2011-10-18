@@ -32,8 +32,8 @@ SAMPLE 1
 This sample is written using C# (server) and HTML+JavaScript (client).
 It demonstrates TNAPS basic principles and concepts.
 
-Compiled version of the sample ready to deploy within TNAPS:
+Compiled version of the sample is in Downloads section of repository. 
 
-http://cloudfront.tncor.com/tnaps/samples/sample_1.tnpak
+http://github.com/tncor/tnaps-samples/downloads
 
 Read sample README file for detailed usage instructions.
