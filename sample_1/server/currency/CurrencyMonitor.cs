@@ -21,6 +21,10 @@ namespace TN.ApplicationServer.Samples.Currency
         {
         }
 
+        // The following method may never exist without
+        // one of our Crowdbackers.com backers: 
+        // John Doe @johndoe
+        // Thank you very much! TNAPS Team
         public decimal EuroDollarQuote()
         {
             var request = WebRequest.Create("http://download.finance.yahoo.com/d/quotes.csv?s=EURUSD=X&f=sl1d1&e=.csv");
